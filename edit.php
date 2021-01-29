@@ -53,16 +53,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Edit Data</title>
 </head>
-<body style = "background-image: url('Back.png')">
+<body>
     <div class="container-sm">
-    <h1 class="display-4 text-light shadow text-center ">Edit Information</h1>
-        <form class = "cent name="form1" method="post" action="edit.php">
+    <h1 class="header display-4 mt-5 text-light  text-center ">Edit Qoutes</h1>
+        <form class = "form-add name="form1" method="post" action="edit.php">
             <table class="text-center text-light ml-5 mt-4">
 				<tr>
-					<td class="shadow">Author</td>
+					<td >Author</td>
 					<td><input  class="mb-1 ml-2"  type="text" name="author" value="<?php echo $author;?>"/></td>
 				</tr>
 				<tr>
@@ -73,7 +73,7 @@
 					<td>
                         <input type="hidden" name="id" value="<?php echo $_GET['id'];?>">
                     </td>
-					<td><input class="text-light mr-1 mt-2 btn btn-dark" type="submit" name="update" value="Update" /></td>
+					<td><input class="text-light mr-1 mt-2 btn btn-secondary text-dark" type="submit" name="update" value="Update" /></td>
 				</tr>
 			</table>
         </form>
